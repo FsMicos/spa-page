@@ -105,8 +105,17 @@
     height: 100px;
     background-color: #F2F6F6;
     display: flex;
-    justify-content: center; /* Centra los dos bloques horizontalmente */
+    justify-content: space-around; /* Centra los dos bloques horizontalmente */
     align-items: center; /* Alinea verticalmente los elementos */
+
+}
+.reservacion .cita{
+    padding-right: 10px;
+    margin-right: 0px;
+}
+.reservacion .codigo{
+    margin-left: 0px;
+    padding-left: 10px;
 }
 
 .reservacion div {
@@ -141,8 +150,8 @@
 /* carta*/
 .card-container{
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    gap:134px;
     padding-top: 100px;
     padding-bottom: 80px;
 }
@@ -208,6 +217,9 @@
     padding-top: 20px;
     height: 770px;
 }
+.card-container-2 .beneficios{
+    display:flex; align-items: center;
+}
 .imagen-carta-circulo{
     width: 233px; /* Tamaño del círculo */
     height: 233px; /* Igual al ancho para que sea un círculo */
@@ -248,11 +260,7 @@
 }
 
 .card ul {
-    list-style-position: inside; /* Ajusta las viñetas al centro */
-    list-style-type: disc; /* Tipo de viñeta */
-    padding-left: 0;
-    text-align: center; /* Centra el texto */
-    
+    text-align:left  
 }
 
 .card ul li {
